@@ -5,3 +5,26 @@
 .green .brand-letter{color:#21d6a0}.blue .brand-letter{color:#509aff}
 .green .gem{filter:drop-shadow(0 3px 8px rgba(8,184,138,.20));image-rendering:auto}
 @media(max-width:650px){.identity p{font-size:11px;letter-spacing:.095em;max-width:330px}.brand-letter{font-size:33px}}
+
+/* v1.2 — organização de links e contato embutido */
+.contact-disclosure{display:block;min-width:0}
+.contact-disclosure summary{cursor:pointer;list-style:none;user-select:none}
+.contact-disclosure summary::-webkit-details-marker{display:none}
+.contact-disclosure summary:hover{transform:translateY(-3px);box-shadow:0 0 26px color-mix(in srgb,var(--gold) 23%,transparent)}
+.contact-disclosure summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.contact-disclosure .chevron{display:inline-block;transition:transform .22s ease}
+.contact-disclosure[open] .chevron{transform:rotate(180deg)}
+.contact-disclosure .contact-panel{margin:9px 0 3px;border:1px solid #a485504b;border-radius:15px;padding:21px 25px;background:linear-gradient(115deg,#191818,#24201b)}
+.contact-heading{margin:0 0 6px;color:#f4f0e8;font:700 16px Manrope,Arial,sans-serif}
+.contact-description{margin:0 0 17px;color:#c7b8a1;font-size:13px;line-height:1.55}
+.contact-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.contact-email{color:#f2e2c8;font-size:15px;overflow-wrap:anywhere;user-select:all}
+.copy-button{cursor:pointer;background:#c7a671;color:#17140f;padding:11px 15px;min-height:40px;border:0;border-radius:9px;font:700 12px Inter,Arial,sans-serif;transition:background .2s,transform .2s}
+.copy-button:hover{background:#edc88a;transform:translateY(-1px)}
+.copy-button:focus-visible{outline:3px solid #f7d29d;outline-offset:3px}
+.copy-feedback{color:#cbb58e;min-height:16px;font-size:11px;margin:9px 0}
+.email-optional{font-size:11px;color:#bc9a66;text-underline-offset:4px}
+.group-separator{display:flex;align-items:center;gap:15px;margin:18px 2px 4px;color:#9f8564;font:600 10px Manrope,Arial,sans-serif;letter-spacing:.25em}
+.group-separator::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,#8e744658,transparent)}
+@media(max-width:650px){.contact-disclosure .contact-panel{padding:17px}.contact-row{align-items:stretch}.contact-email{font-size:13px}.copy-button{width:100%}.group-separator{margin-top:15px;font-size:9px}}
+@media(prefers-reduced-motion:reduce){.contact-disclosure .chevron{transition:none}}
