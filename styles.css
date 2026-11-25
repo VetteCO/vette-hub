@@ -28,3 +28,8 @@
 .group-separator::after{content:"";height:1px;flex:1;background:linear-gradient(90deg,#8e744658,transparent)}
 @media(max-width:650px){.contact-disclosure .contact-panel{padding:17px}.contact-row{align-items:stretch}.contact-email{font-size:13px}.copy-button{width:100%}.group-separator{margin-top:15px;font-size:9px}}
 @media(prefers-reduced-motion:reduce){.contact-disclosure .chevron{transition:none}}
+
+/* v1.3 — joia PULSE (imagem real do brand kit, formato largo 2:1) */
+.blue .gem{width:200px;height:auto;right:120px;filter:drop-shadow(0 3px 10px rgba(56,141,255,.35))}
+@media(max-width:650px){.blue .gem{width:96px;right:44px;opacity:.85}}
+@media(max-width:380px){.blue .gem{width:84px;right:40px;opacity:.6}}
